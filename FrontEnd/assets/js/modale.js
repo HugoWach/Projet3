@@ -187,7 +187,8 @@ function WorksAdd() {
 
         if (response.status === 201) {
             console.log("La figure est ajouté")
-            init()
+            let NewInfoWorks = await GetAllInfoWorks();
+            DisplayAllInfo(NewInfoWorks);
         }
     })
 
